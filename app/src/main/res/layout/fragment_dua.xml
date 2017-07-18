@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:id="@+id/etfragment_dua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Input Something Here"/>
+    <Button
+        android:layout_below="@id/etfragment_dua"
+        android:id="@+id/btnfragment_Dua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do Something"/>
+    <Button
+        android:id="@+id/btnAsync"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/btnfragment_Dua"
+        android:layout_height="wrap_content"
+        android:text="Do Async Process"/>
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnAsync"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
