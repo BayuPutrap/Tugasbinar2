@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:layout_height="match_parent"
+<LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    tools:context=".FragmentActivity"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <fragment
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Main Activity Text"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btnActivty"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Tombol Activity"/>-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:id="@+id/fragmentSatu"
+        android:layout_height="match_parent">
+        <fragment
+            android:name="com.example.inklocal.asyncronus.FragmentSatu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/fragment_1"
+            tools:layout="@layout/fragment_satu"
         />
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/fragmentDua"
+
+        <fragment
+            android:name="com.example.inklocal.asyncronus.FragmentDua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragment_2"
+            tools:layout="@layout/fragment_dua"
         />
+    </FrameLayout>
 
 </LinearLayout>
